@@ -1,0 +1,223 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*----------------------------------------------------------------
+[Table of contents]
+
+1. GLOBAL
+2. SITE COLORS
+3. TYPOGRAPHY
+4. ELEMENTS
+5. PORTFOLIO
+6. MOBILE
+7. CONTACT FORM
+
+-------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------
+1. GLOBAL
+-------------------------------------------------------------------*/
+body {
+  background-image: url("../image/concrete_seamless.png");
+}
+
+#TextWrap {
+  float: left;
+  margin-right: 10px;
+}
+
+.bdy {
+  font-family: Arial, Helvetica, sans-serif !important;
+  padding-bottom: 10rem;
+}
+ol, ul {
+  list-style-type: none;
+  -webkit-padding-start: .9rem !important;
+  -moz-padding-start: .1rem !important;
+}
+label {
+  color: #000;
+}
+.btn-info {
+  background-color: #4aaaa5;
+  border-color: #4aaaa5;
+}
+/*----------------------------------------------------------------
+2. SITE COLORS
+-------------------------------------------------------------------*/
+.teal {
+  color: #4aaaa5;
+}
+.tealbg {
+  background-color: #4aaaa5;
+}
+.regular {
+  color: #777777 !important;
+}
+.light {
+  color: #c8cccc !important;
+}
+.whitebg {
+  background-color: #ffffff;
+}
+.white-text {
+  color: #ffffff !important;
+}
+.greyBorder {
+  border-bottom: .2rem solid #cecece !important;
+}
+.greybg {
+  background-color: #666666;
+}
+/*----------------------------------------------------------------
+3. TYPOGRAPHY
+-------------------------------------------------------------------*/
+.logo a {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.navbar-nav a {
+  color: #777777 !important;
+  font-size: 1.3rem;
+}
+.nav-inrtxt:hover {
+  color: #4aaaa5 !important;
+  text-decoration: underline;
+}
+.active .nav-inrtxt {
+  color: #4aaaa5 !important;
+}
+.t-sub {
+  font-size: 1.3rem;
+}
+.port_title {
+  z-index: 2;
+  opacity: .8;
+}
+.bld {
+  font-weight: 800;
+}
+/*----------------------------------------------------------------
+4. ELEMENTS
+-------------------------------------------------------------------*/
+#side_bar .fa {
+  font-size: 3rem
+}
+.card-img-overlay {
+  opacity: .8;
+  top: 6rem;
+  height: 5rem;
+}
+footer {
+  border-top: .5rem solid #4aaaa5;
+  color: #c8cccc;
+}
+
+/*----------------------------------------------------------------
+5. PORTFOLIO
+-------------------------------------------------------------------*/
+.work {
+  overflow: auto;
+  position: relative;
+  margin: 20px 0 25px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: .8;
+}
+
+.work h3 {
+  border-bottom: 0;
+  background: #4aaaa5;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  padding: 15px;
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+/*----------------------------------------------------------------
+6. MOBILE
+-------------------------------------------------------------------*/
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  .form-control {
+    text-align: center;
+  }
+  .card-img-overlay {
+    height: 4rem;
+    top: 9rem;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) {
+  .nav-item:nth-child(1), .nav-item:nth-child(2) {
+    border-bottom: 1px solid #c1c1c1;
+  }
+}
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {
+  @media (min-width: 1200px) {
+    .card-img-overlay {
+      height: 4rem;
+      top: 9rem;
+    }
+  }
+}
+/*Extra large devices (large desktops & screens, 1200px and up)*/
+@media (min-width: 1200px) {
+  .card-img-overlay {
+    height: 4rem;
+    top: 9rem;
+  }
+}
+
+/*----------------------------------------------------------------
+7. CONTACT FORM
+-------------------------------------------------------------------*/
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  font-size: 14px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+}
+
+input[type=submit] {
+  background: #4aaaa5;
+  border: 0 none;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
